@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     Información de proovedores
-    <!-- Formulario para agregar/editar proveedor -->
+    <!-- Formulario para botones y espacios para agregar/editar -->
 <asp:Panel ID="pnlFormulario" runat="server">
     <h3>Formulario de Proveedor</h3>
     

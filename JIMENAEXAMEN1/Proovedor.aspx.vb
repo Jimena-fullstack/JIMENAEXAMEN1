@@ -8,7 +8,7 @@ Public Class Proovedores
     End Sub
 
     Protected Sub btnGuardar_Click(sender As Object, e As EventArgs)
-        ' Crear conexión y comando para insertar nuevo proveedor
+
         Dim connStr As String = ConfigurationManager.ConnectionStrings("ProovedoresConnectionString2").ConnectionString
         Using conn As New SqlConnection(connStr)
             Dim query As String = "INSERT INTO Proovedores (NombreEmpresa, Contacto, Telefono) VALUES (@NombreEmpresa, @Contacto, @Telefono)"
@@ -22,7 +22,7 @@ Public Class Proovedores
             End Using
         End Using
 
-        ' Limpiar y actualizar vista
+
         LimpiarFormulario()
         Grid.DataBind()
     End Sub
