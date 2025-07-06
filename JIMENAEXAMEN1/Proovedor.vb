@@ -13,6 +13,10 @@
     Public Property Contacto As String
     Public Property Telefono As String
 
+    Partial Class Proovedores
+        Inherits System.Web.UI.Page
+    End Class
+
 End Class
 
 
