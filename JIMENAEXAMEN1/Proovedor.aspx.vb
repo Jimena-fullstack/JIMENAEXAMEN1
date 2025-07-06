@@ -5,11 +5,11 @@
 
     End Sub
     Protected Sub gvProveedores_SelectedIndexChanged(sender As Object, e As EventArgs)
-        ' Lógica para cuando el usuario hace clic en "Select"
+        '  "Select"
     End Sub
 
     Protected Sub gvProveedores_RowDeleting(sender As Object, e As GridViewDeleteEventArgs)
-        ' Lógica para cuando el usuario hace clic en "Delete"
+        ' "Delete"
     End Sub
 
 End Class
