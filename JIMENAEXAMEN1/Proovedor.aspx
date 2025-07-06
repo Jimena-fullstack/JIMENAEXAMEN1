@@ -2,6 +2,25 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     Información de proovedores
+    <!-- Formulario para agregar/editar proveedor -->
+<asp:Panel ID="pnlFormulario" runat="server">
+    <h3>Formulario de Proveedor</h3>
+    
+    <asp:Label ID="lblNombreEmpresa" runat="server" Text="Nombre Empresa: " />
+    <asp:TextBox ID="txtNombreEmpresa" runat="server" /><br /><br />
+
+    <asp:Label ID="lblContacto" runat="server" Text="Contacto: " />
+    <asp:TextBox ID="txtContacto" runat="server" /><br /><br />
+
+    <asp:Label ID="lblTelefono" runat="server" Text="Teléfono: " />
+    <asp:TextBox ID="txtTelefono" runat="server" /><br /><br />
+
+    <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
+    <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" CausesValidation="False" />
+</asp:Panel>
+
+<br />
+
 
     <asp:GridView ID="Grid" runat="server" DataSourceID="SqlDataSource3"
         AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False"
